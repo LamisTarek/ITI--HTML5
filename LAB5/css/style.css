@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-image: url(../images/1.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.home-data button:hover{
+    background-color: rgb(24, 93, 93);
+    border: none;
+    color: white;
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.icons{
+    display: none;
+    background-color: rgb(209, 108, 90);
+}
+.activity .card img:hover ~ .icons{
+    display: flex;
+} 
+i{
+    border: 1px solid gainsboro;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+
+
+
+/****3rd page***/
+.gallery .card img{
+    background-color: rgb(13, 9, 3);
+    opacity: .5;
+}
+.gallery .card  p{
+    display: none;
+}
+
+.gallery .card img:hover{
+    opacity: 1;
+}
+.gallery .card img:hover~p{
+    display: block ;
+}
+.form-page{
+    background-color: rgb(232, 237, 242);
+}
+.footer button:hover{
+    background-color: rgb(209, 202, 202);
+    border: none;
+    transform: scale(1.1);
+    transition: all 1s;
+
+}
+ a{
+    text-decoration: none!important;
+    color: black;
+}
+
