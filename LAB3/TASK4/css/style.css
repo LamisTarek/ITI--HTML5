@@ -1,0 +1,39 @@
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.warapper {
+  background: linear-gradient(#f5f5cf, #f3c88f);
+  width: 80%;
+  height: 50vh;
+  border: 2px solid black;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.add {
+  padding: 30px 10px;
+  border-radius: 10px;
+  background: linear-gradient(#e66465, #9198e5);
+}
+.mul {
+  padding: 30px 10px;
+  border-radius: 10px;
+  background: linear-gradient(#e4b268, #9198e5);
+}
+span {
+  padding: 20px 0;
+  font-size: 24px;
+}
+input[type="number"] {
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+}

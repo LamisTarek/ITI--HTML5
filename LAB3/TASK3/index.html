@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB90FxtYG_ybAYXGkz0ybkmkboE2nEbezI"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <main id="main">
+      <br />
+      <header>
+        <button class="btn1" onclick="getlocation()">Display Map</button>
+        <button class="btn2" onclick="showData()">Detailed Information</button>
+      </header>
+      <section id="map">
+        <div id="showMap">
+
+        </div>
+        <section id="mapData">
+            <div class="">
+              <h3>latitude</h3>
+              <p class="lat"></p>
+            </div>
+            <div class="">
+              <h3>longitude</h3>
+              <p class="long"></p>
+            </div>
+            <div class="">
+              <h3>Accuracy</h3>
+              <p class="Acc"></p>
+            </div>
+            <div class="">
+              <h3>TimeStamp</h3>
+              <p class="time"></p>
+            </div>
+          </section>
+
+
+      </section>
+      
+    </main>
+  </body>
+</html>
