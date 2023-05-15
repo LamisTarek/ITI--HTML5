@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding:0;
+}
+main{
+    box-shadow: 10px 10px 25px #ff74ff, inset 0 0 100px #33e6b4;
+    width: 70%;
+    border:4px solid #caad51;
+    margin: 3% auto;
+    height:500px;
+    padding: 2%;
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+
+}
+
+main:hover{
+    transform: skew(10deg,0);
+    transition: transform 3s;
+}
+
+main:not(:hover){
+    transition: transform 3s;
+}
+
+main:active{
+    transform: scale(0.7);
+    transition: transform 3s;
+}
+
+.left{
+    box-shadow: inset 0 0 100px #9feb5e;
+    border: 4px solid #173231;
+    border-radius: 15px;
+    width: 20%;
+    height: 400px;
+    padding: 3%;
+    column-count: 3;
+    column-rule: 2px solid rgb(214, 20, 20);
+    column-gap: 4px;
+    text-align: center;
+    overflow-x: scroll;
+    margin-right: 4%;
+    margin-left: 4%;
+} 
+
+mark {
+    background-color: lightgreen;
+}
+
+mark:hover{
+    background-image: linear-gradient(red, yellow);
+}
+@media all and (orientation:portrait){
+    img{
+        transform: rotate(45deg);
+        box-shadow: 10px 10px 25px blue;
+        transition: all 3s;
+    }
+    img:active{
+        border: 2px dashed black;
+        box-shadow: 10px 10px 25px red;
+        transform: scale(1);
+    }
+    mark{
+        background-color: blue;
+    }
+    .left{
+        column-rule: none;
+        border: 4px solid lightcoral;
+    }
+    main:hover{
+        transform: skew(0deg);
+
+    }
+    .left{
+        column-count: 2;
+    }
+}
+
+.right{
+    box-shadow: inset 0 0 100px #33e6b4;
+    border: 4px solid #143fd2;
+    border-radius: 15px;
+    width: 50%;
+    padding: 3%;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    border: 2px solid #143fd2;
+}
+img:hover{
+    transform: scale(1.2);
+    transition: transform 3s;
+}
+img:not(:hover){
+    transition: transform 3s;
+}
+img:active{
+    transform: scale(2.5);
+    transition: transform 3s;
+}
+
